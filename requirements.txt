@@ -1,0 +1,5 @@
+beautifulsoup4==4.6.0
+numpy==1.14.0
+opencv-python==3.4.0.12
+Pillow==5.0.0
+pytesseract==0.1.7
