@@ -17,6 +17,7 @@ user_agent = 'Mozilla/5.0 (Macintosh; Intel Mac OS X x.y; rv:10.0) Gecko/2010010
 headers = {'User-Agent': user_agent}
 google_url = "https://www.google.com/search?q="
 
+# todo make sure to change bbox according to position of answer UI in screen
 bbox = (0, 550, 800, 1250)  # specific area in the screen
 
 
@@ -60,7 +61,7 @@ def query_for_all(quest, ans):
             ans_occ[i] += content.count(ans[i].lower())
         if 'missing: ' in content:  # todo reduce score not continue
             print('%s missing' % choice)
-            # continugnospio
+            # continue
     return ans_occ
 
 
