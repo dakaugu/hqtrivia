@@ -88,7 +88,10 @@ def feed(image):
         answers = [x for x in answers.split("\n") if x]  # todo remove "-" answers and extra noise
         print('QUESTION IS:', question)
         print('OPTIONS ARE:\n', answers)
-        calculate_answer(question, answers)
+        if len(answers) > 0:
+            calculate_answer(question, answers)
+        else:
+            print('No answers on img')
     else:
         print('No question on screen')
 
